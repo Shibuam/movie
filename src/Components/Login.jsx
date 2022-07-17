@@ -17,7 +17,7 @@ const Login = () => {
 
     console.log(data);
    
-    if (userDetails.name===data.name && userDetails.paqssword===data.password){
+   if (userDetails && userDetails.name===data.name && userDetails.password===data.password){
      
       navigate("/movie_list");
     }
